@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Defense &amp; Biotech Weekly Catalyst Desk</title>
+  <meta
+    name="description"
+    content="Report settimanale comparabile su small cap difesa e biotech con tracking storico, setup operativi, fonti esterne multi-source e chat di approfondimento."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topband">
+      <div class="topband-copy">
+        <div class="eyebrow">Catalyst Desk · Difesa / Biotech · 1$–10$ · 15–60 giorni</div>
+        <h1>Un solo bot, una sola struttura, stessa disciplina ogni settimana.</h1>
+        <p class="lede">
+          Report operativo comparabile week-over-week con focus su catalyst, valuation gap,
+          rischio e setup. Nessuna opportunita` viene forzata: se lo screening non passa i filtri,
+          il desk lo dichiara.
+        </p>
+      </div>
+
+      <div class="topband-meta">
+        <div class="meta-block">
+          <span class="meta-label">Settimana selezionata</span>
+          <select id="week-selector" aria-label="Seleziona settimana"></select>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Ticker selezionato</span>
+          <div id="selected-symbol-label" class="meta-value">In caricamento</div>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Fonti incrociate</span>
+          <div class="source-pill-row">
+            <span class="source-pill">Yahoo Finance</span>
+            <span class="source-pill">SEC</span>
+            <span class="source-pill">ClinicalTrials</span>
+            <span class="source-pill">Reddit</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="report-column">
+        <section class="surface surface-summary">
+          <div class="surface-head">
+            <div>
+              <div class="section-kicker">Executive Summary</div>
+              <h2>Sintesi operativa della settimana</h2>
+            </div>
+            <button id="print-report-btn" class="ghost-button" type="button">Stampa / PDF</button>
+          </div>
+          <div id="summary-grid" class="summary-grid"></div>
+          <div id="macro-grid" class="macro-grid"></div>
+          <div id="screening-strip" class="screening-strip"></div>
+        </section>
+
+        <section class="surface">
+          <div class="surface-head">
+            <div>
+              <div class="section-kicker">Weekly Watchlist Table</div>
+              <h2>Watchlist coerente, con ingressi, conferme e uscite</h2>
+            </div>
+            <div id="watchlist-legend" class="legend-row"></div>
+          </div>
+          <div class="table-wrap">
+            <table class="watchlist-table">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Settore</th>
+                  <th>Catalyst</th>
+                  <th>Upside</th>
+                  <th>Rischio principale</th>
+                  <th>Stato</th>
+                </tr>
+              </thead>
+              <tbody id="watchlist-body"></tbody>
+            </table>
+          </div>
+          <div id="removed-strip" class="removed-strip"></div>
+        </section>
+
+        <section class="surface">
+          <div class="surface-head">
+            <div>
+              <div class="section-kicker">Analisi Dettagliata</div>
+              <h2>Investment thesis, rischi, scenari e setup</h2>
+            </div>
+            <div id="detail-status" class="detail-status"></div>
+          </div>
+          <div id="detail-panel" class="detail-panel"></div>
+        </section>
+
+        <div class="dual-grid">
+          <section class="surface">
+            <div class="surface-head">
+              <div>
+                <div class="section-kicker">Comparative Risk Ranking</div>
+                <h2>Classifica del rischio</h2>
+              </div>
+            </div>
+            <div id="risk-ranking" class="ranking-list"></div>
+          </section>
+
+          <section class="surface">
+            <div class="surface-head">
+              <div>
+                <div class="section-kicker">Portfolio Implication</div>
+                <h2>Dove allocare, mantenere o ridurre</h2>
+              </div>
+            </div>
+            <div id="portfolio-implication" class="portfolio-list"></div>
+          </section>
+        </div>
+
+        <section class="surface">
+          <div class="surface-head">
+            <div>
+              <div class="section-kicker">Metodo</div>
+              <h2>Regole di processo e pattern ricorrenti</h2>
+            </div>
+          </div>
+          <div id="methodology" class="methodology-grid"></div>
+        </section>
+      </section>
+
+      <aside class="intel-column">
+        <section class="surface side-surface">
+          <div class="surface-head side-head">
+            <div>
+              <div class="section-kicker">Tracking</div>
+              <h2>Cosa e` cambiato vs settimana precedente</h2>
+            </div>
+          </div>
+          <div id="week-delta" class="delta-list"></div>
+        </section>
+
+        <section class="surface side-surface">
+          <div class="surface-head side-head">
+            <div>
+              <div class="section-kicker">Quant Live</div>
+              <h2>Prezzo, momentum, volumi, compressione</h2>
+            </div>
+            <button id="refresh-live-btn" class="ghost-button" type="button">Aggiorna</button>
+          </div>
+          <div id="quant-state" class="message-box">In attesa del ticker selezionato.</div>
+          <canvas id="price-canvas" class="price-canvas" aria-label="Grafico prezzo"></canvas>
+          <div id="quant-grid" class="quant-grid"></div>
+        </section>
+
+        <section class="surface side-surface">
+          <div class="surface-head side-head">
+            <div>
+              <div class="section-kicker">External Context</div>
+              <h2>Fonti esterne incrociate</h2>
+            </div>
+            <button id="refresh-intel-btn" class="ghost-button" type="button">Ricarica fonti</button>
+          </div>
+          <div id="intel-state" class="message-box">Nessuna evidenza live caricata.</div>
+          <div id="intel-summary" class="intel-summary"></div>
+          <div id="intel-feeds" class="intel-feeds"></div>
+        </section>
+
+        <section class="surface side-surface chat-surface">
+          <div class="surface-head side-head">
+            <div>
+              <div class="section-kicker">Live Chat</div>
+              <h2>Domande di approfondimento sul report</h2>
+            </div>
+          </div>
+          <div id="chat-suggestions" class="suggestion-row"></div>
+          <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+          <form id="chat-form" class="chat-form">
+            <label for="chat-input" class="sr-only">Domanda</label>
+            <textarea
+              id="chat-input"
+              rows="3"
+              placeholder="Esempio: Perche STTK e` la miglior opportunita` R/R questa settimana?"
+            ></textarea>
+            <div class="chat-actions">
+              <button class="primary-button" type="submit">Invia domanda</button>
+            </div>
+          </form>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
