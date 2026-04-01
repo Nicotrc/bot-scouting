@@ -1,0 +1,981 @@
+{
+  "meta": {
+    "appName": "Defense & Biotech Weekly Catalyst Desk",
+    "version": "1.0.0",
+    "defaultWeekId": "2026-W14",
+    "disclaimer": "Strumento di ricerca. Verificare sempre prezzi, volumi, filing SEC, dati clinici e costi di transazione prima di operare."
+  },
+  "reports": [
+    {
+      "id": "2026-W13",
+      "weekLabel": "W13 2026",
+      "reportDate": "2026-03-23",
+      "iterationLabel": "Baseline di migrazione dai due bot legacy",
+      "macroContext": {
+        "headline": "Settimana di transizione: momentum diffuso ma ancora poco disciplinato sul perimetro settoriale.",
+        "cards": [
+          {
+            "label": "Regime macro",
+            "value": "Risk-on selettivo",
+            "tone": "positive",
+            "detail": "Ampiezza migliore sulle small cap, ma dispersione elevata tra settori."
+          },
+          {
+            "label": "Biotech sentiment",
+            "value": "In recupero",
+            "tone": "neutral",
+            "detail": "Short covering su nomi depressi; attenzione ai binari non coperti da cassa."
+          },
+          {
+            "label": "Difesa sentiment",
+            "value": "Strutturale",
+            "tone": "positive",
+            "detail": "Drone, counter-UAS e space theme restano in focus."
+          }
+        ],
+        "screeningNarrative": "La base legacy mostrava 5 nomi monitorati, ma solo 3 con aderenza piena al mandato defense/biotech. Questa settimana viene usata come baseline per pulire il processo."
+      },
+      "screening": {
+        "universeReviewed": 47,
+        "validSetups": 3,
+        "newEntries": 2,
+        "removed": 0
+      },
+      "executiveSummary": {
+        "topOpportunities": [
+          "PRSO",
+          "ALLO"
+        ],
+        "newEntries": [
+          "PRSO",
+          "LUNR"
+        ],
+        "removed": [],
+        "keyInsights": [
+          "Il momentum scanner legacy portava nomi forti ma con settore non sempre coerente.",
+          "ALLO ha il miglior profilo squeeze/speculation ma con rischio offering elevato.",
+          "PRSO e LUNR offrono catalizzatori difesa piu` concreti, ma con differenze nette di capitalizzazione e disciplina del prezzo."
+        ]
+      },
+      "watchlist": [
+        {
+          "symbol": "ALLO",
+          "company": "Allogene Therapeutics",
+          "sector": "Biotech",
+          "subSector": "Cell therapy",
+          "status": "Confermato",
+          "priceReference": "~$2.80",
+          "catalyst": "Short interest elevato e read-through da conference data",
+          "catalystWindow": "15-45 giorni",
+          "estimatedUpside": "+14% base / +96% bull",
+          "primaryRisk": "Clinical binary e offering risk",
+          "thesis": "Nome compresso, short interest ~30% del float e narrativa M&A su CAR-T. Edge tattico, non fondamentale puro.",
+          "updateVsPrevious": "Baseline legacy: nessun cambiamento strutturale, ma inquadrato ora come trade speculativo e non come core conviction.",
+          "valuationGap": {
+            "current": "~$2.80",
+            "target": "$3.20 base / $5.50 bull",
+            "upside": "+14% a +96%"
+          },
+          "marketStructure": {
+            "trend": "Debole ma compresso",
+            "keyLevels": "$2.70 supporto / $3.50 first exit / $5.50 squeeze target",
+            "cycle": "Compressione con trigger su volume"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Molto alto",
+            "politicalRisk": "Basso",
+            "dilutionRisk": "Alto",
+            "downside": "$1.80 realistico in assenza di catalyst o su offering",
+            "notes": [
+              "Da trattare come posizione piccola e opportunistica.",
+              "Ogni filing SEC pesa piu` della price action giornaliera."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$5.50",
+              "probability": "20%",
+              "narrative": "Short squeeze e/o rumor M&A."
+            },
+            {
+              "name": "Base",
+              "price": "$3.20",
+              "probability": "40%",
+              "narrative": "Stabilizzazione e rotazione biotech."
+            },
+            {
+              "name": "Bear",
+              "price": "$1.80",
+              "probability": "40%",
+              "narrative": "Offering o dati deludenti."
+            }
+          ],
+          "setup": {
+            "entry": "$2.70-$2.90 solo su volume",
+            "stop": "$2.30",
+            "target": "$3.50 / $5.50",
+            "strategy": "Solo accumulo tattico"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "~$2.80",
+              "status": "Confermato",
+              "scenario": "Setup squeeze"
+            }
+          ],
+          "recurringPattern": "Pre-catalyst squeeze e sell-off rapido se manca la conferma clinica.",
+          "sourceFocus": {
+            "company": "Allogene Therapeutics",
+            "keywords": [
+              "ALLO",
+              "allogene",
+              "cell therapy"
+            ],
+            "sector": "biotech"
+          }
+        },
+        {
+          "symbol": "PRSO",
+          "company": "Peraso",
+          "sector": "Difesa",
+          "subSector": "Defense tech / mmWave",
+          "status": "Nuovo",
+          "priceReference": "~$3.50",
+          "catalyst": "Defense tech contract e possibile second leg post-consolidation",
+          "catalystWindow": "15-30 giorni",
+          "estimatedUpside": "+20% base / +86% bull",
+          "primaryRisk": "Fade del post-spike",
+          "thesis": "Catalizzatore reale, narrativa difesa e low float: il titolo va trattato come continuation trade solo se regge la base.",
+          "updateVsPrevious": "Nuovo nel perimetro legacy come miglior nome difesa in range di prezzo.",
+          "valuationGap": {
+            "current": "~$3.50",
+            "target": "$4.20 base / $6.50 bull",
+            "upside": "+20% a +86%"
+          },
+          "marketStructure": {
+            "trend": "Forte spike seguito da consolidazione",
+            "keyLevels": "$2.90 invalidazione / $4.50 breakout / $6.50 extension",
+            "cycle": "Post-contract hype cycle"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Medio",
+            "politicalRisk": "Medio",
+            "dilutionRisk": "Basso",
+            "downside": "$2.20 realistico se l'hype si sgonfia",
+            "notes": [
+              "Il titolo ha bisogno di una base di almeno 5 sedute.",
+              "Più solido di un meme play, ma sempre low float."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$6.50",
+              "probability": "20%",
+              "narrative": "Nuovi contratti o upgrade."
+            },
+            {
+              "name": "Base",
+              "price": "$4.20",
+              "probability": "40%",
+              "narrative": "Tenuta del breakout e rotazione su defense tech."
+            },
+            {
+              "name": "Bear",
+              "price": "$2.20",
+              "probability": "40%",
+              "narrative": "Pump-and-fade senza follow-through."
+            }
+          ],
+          "setup": {
+            "entry": "Solo dopo base >5 sedute",
+            "stop": "$2.90",
+            "target": "$4.50 / $6.50",
+            "strategy": "Attesa con trigger"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "~$3.50",
+              "status": "Nuovo",
+              "scenario": "Post-spike consolidation"
+            }
+          ],
+          "recurringPattern": "Contract hype cycle: primo spike, base, eventuale secondo impulso solo se entrano news nuove.",
+          "sourceFocus": {
+            "company": "Peraso",
+            "keywords": [
+              "PRSO",
+              "Peraso",
+              "mmWave defense"
+            ],
+            "sector": "defense"
+          }
+        },
+        {
+          "symbol": "LUNR",
+          "company": "Intuitive Machines",
+          "sector": "Difesa",
+          "subSector": "Spazio / NASA / DoD",
+          "status": "Nuovo",
+          "priceReference": "~$17.92",
+          "catalyst": "IM-5 NASA award e attesa decisione LTV",
+          "catalystWindow": "30-60 giorni",
+          "estimatedUpside": "+35% base / +95% bull",
+          "primaryRisk": "Fuori range prezzo e insider selling",
+          "thesis": "Nome di qualita` tematica, ma non coerente con il mandato 1$-10$. Restera` solo come benchmark difesa finche non verra` escluso.",
+          "updateVsPrevious": "Nuovo ingresso dal bot catalyst legacy, subito marcato come anomalia di range.",
+          "valuationGap": {
+            "current": "~$17.92",
+            "target": "$24 base / $35 bull",
+            "upside": "+35% a +95%"
+          },
+          "marketStructure": {
+            "trend": "Trend positivo ma esteso",
+            "keyLevels": "$16.50 pullback / $24 first target / $14 invalidazione",
+            "cycle": "Contract repricing"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Medio",
+            "politicalRisk": "Medio",
+            "dilutionRisk": "Medio",
+            "downside": "$10-14 in caso di perdita LTV o compressione multipli",
+            "notes": [
+              "Benchmark tematico, non small cap in range.",
+              "Insider selling troppo pesante per considerarlo core."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$28-35",
+              "probability": "30%",
+              "narrative": "Award LTV e execution forte."
+            },
+            {
+              "name": "Base",
+              "price": "$20-24",
+              "probability": "40%",
+              "narrative": "Backlog eseguito senza sorprese."
+            },
+            {
+              "name": "Bear",
+              "price": "$10-14",
+              "probability": "30%",
+              "narrative": "Cash burn o delusione contratti."
+            }
+          ],
+          "setup": {
+            "entry": "$16.50-$18.00",
+            "stop": "$14.00",
+            "target": "$24.00",
+            "strategy": "Solo monitoraggio tattico"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "~$17.92",
+              "status": "Nuovo",
+              "scenario": "Benchmark tematico"
+            }
+          ],
+          "recurringPattern": "Contract repricing con rischio sell-the-news post-award.",
+          "sourceFocus": {
+            "company": "Intuitive Machines",
+            "keywords": [
+              "LUNR",
+              "NASA",
+              "LTV"
+            ],
+            "sector": "defense"
+          }
+        },
+        {
+          "symbol": "TLRY",
+          "company": "Tilray Brands",
+          "sector": "Fuori mandato",
+          "subSector": "Cannabis",
+          "status": "Confermato",
+          "priceReference": "$6.60",
+          "catalyst": "Pre-earnings run legacy",
+          "catalystWindow": "15 giorni",
+          "estimatedUpside": "+13% base / +36% bull",
+          "primaryRisk": "Earnings miss storico",
+          "thesis": "Buon trade tattico legacy ma senza coerenza con il mandato settoriale defense/biotech.",
+          "updateVsPrevious": "Presente solo come residuo del bot momentum.",
+          "valuationGap": {
+            "current": "$6.60",
+            "target": "$7.50 base / $9.00 bull",
+            "upside": "+13% a +36%"
+          },
+          "marketStructure": {
+            "trend": "Reversal tattico",
+            "keyLevels": "$6.40 supporto / $7.40 trigger / $5.90 invalidazione",
+            "cycle": "Pre-earnings"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Medio",
+            "politicalRisk": "Basso",
+            "dilutionRisk": "Basso",
+            "downside": "$5.80",
+            "notes": [
+              "Titolo fuori perimetro settoriale da rimuovere."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$9.00",
+              "probability": "25%",
+              "narrative": "Beat e guidance."
+            },
+            {
+              "name": "Base",
+              "price": "$7.50",
+              "probability": "45%",
+              "narrative": "Run-up pre-evento."
+            },
+            {
+              "name": "Bear",
+              "price": "$5.80",
+              "probability": "30%",
+              "narrative": "Miss e reset."
+            }
+          ],
+          "setup": {
+            "entry": "$6.40-$6.60",
+            "stop": "$5.90",
+            "target": "$7.40 / $9.00",
+            "strategy": "Nessuna nuova allocazione"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "$6.60",
+              "status": "Legacy",
+              "scenario": "Da rimuovere"
+            }
+          ],
+          "recurringPattern": "Pre-earnings run, non piu` rilevante per il desk.",
+          "sourceFocus": {
+            "company": "Tilray Brands",
+            "keywords": [
+              "TLRY",
+              "Tilray"
+            ],
+            "sector": "other"
+          }
+        },
+        {
+          "symbol": "SOUN",
+          "company": "SoundHound AI",
+          "sector": "Fuori mandato",
+          "subSector": "AI / Voice",
+          "status": "Confermato",
+          "priceReference": "$7.44",
+          "catalyst": "Reversal contro-trend legacy",
+          "catalystWindow": "30 giorni",
+          "estimatedUpside": "+14% base / +61% bull",
+          "primaryRisk": "Nessun catalyst binario imminente",
+          "thesis": "Trade tattico di mean reversion non coerente con il processo settoriale.",
+          "updateVsPrevious": "Residuo del momentum bot, destinato a rimozione.",
+          "valuationGap": {
+            "current": "$7.44",
+            "target": "$8.50 base / $12 bull",
+            "upside": "+14% a +61%"
+          },
+          "marketStructure": {
+            "trend": "Downtrend",
+            "keyLevels": "$8.05 trigger / $7.10 invalidazione",
+            "cycle": "Tentativo di reversal"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Basso",
+            "politicalRisk": "Basso",
+            "dilutionRisk": "Medio",
+            "downside": "$5.50",
+            "notes": [
+              "Fuori focus, nessuna allocazione suggerita."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$12.00",
+              "probability": "20%",
+              "narrative": "Partnership o sentiment AI."
+            },
+            {
+              "name": "Base",
+              "price": "$8.50",
+              "probability": "35%",
+              "narrative": "Cross MA20."
+            },
+            {
+              "name": "Bear",
+              "price": "$5.50",
+              "probability": "45%",
+              "narrative": "Continua il downtrend."
+            }
+          ],
+          "setup": {
+            "entry": "Solo sopra $8.05",
+            "stop": "$7.10",
+            "target": "$10.00 / $12.50",
+            "strategy": "Da escludere dal desk"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "$7.44",
+              "status": "Legacy",
+              "scenario": "Da rimuovere"
+            }
+          ],
+          "recurringPattern": "Counter-trend mean reversion, non rilevante per questa strategia.",
+          "sourceFocus": {
+            "company": "SoundHound AI",
+            "keywords": [
+              "SOUN",
+              "SoundHound"
+            ],
+            "sector": "other"
+          }
+        }
+      ],
+      "removed": [],
+      "riskRanking": {
+        "mostDefensive": {
+          "symbol": "PRSO",
+          "label": "Piu` difensivo",
+          "reason": "Catalyst reale legato a contratto difesa, ma con timing ancora da confermare."
+        },
+        "mostSpeculative": {
+          "symbol": "ALLO",
+          "label": "Piu` speculativo",
+          "reason": "Setup squeeze forte ma rischio binario/offering ancora dominante."
+        },
+        "bestRiskReward": {
+          "symbol": "PRSO",
+          "label": "Miglior rischio/rendimento legacy",
+          "reason": "Il binomio catalyst reale + prezzo in range batteva i residui non coerenti."
+        }
+      },
+      "portfolioImplication": [
+        {
+          "bucket": "Allocare",
+          "symbol": "PRSO",
+          "title": "Accumulare solo su base completata",
+          "body": "Il desk privilegia PRSO come nome difesa tattico. Nessun inseguimento sopra spike."
+        },
+        {
+          "bucket": "Mantenere",
+          "symbol": "ALLO",
+          "title": "Solo posizione piccola",
+          "body": "ALLO resta per operativita` aggressiva, ma non e` una core position."
+        },
+        {
+          "bucket": "Ridurre / escludere",
+          "symbol": "TLRY / SOUN",
+          "title": "Pulizia del processo",
+          "body": "I due nomi legacy vengono mantenuti solo per tracking di migrazione, non per capitale nuovo."
+        }
+      ],
+      "methodology": {
+        "pillars": [
+          {
+            "title": "No forced setups",
+            "body": "Se un nome non rispetta settore, range prezzo o catalyst, resta fuori anche se il momentum e` forte."
+          },
+          {
+            "title": "Comparabilita`",
+            "body": "Ogni ticker va tracciato con prezzo, scenario e probabilita` week-over-week."
+          },
+          {
+            "title": "Pattern tracking",
+            "body": "Pre-catalyst run, contract hype cycle e post-event sell-off vengono annotati come edge ricorrenti."
+          }
+        ]
+      }
+    },
+    {
+      "id": "2026-W14",
+      "weekLabel": "W14 2026",
+      "reportDate": "2026-03-30",
+      "iterationLabel": "Prima settimana del desk unificato",
+      "macroContext": {
+        "headline": "Il conflitto in Medio Oriente alza il premio sul tema difesa e rende piu` fragile il biotech speculativo vicino ai catalyst binari.",
+        "cards": [
+          {
+            "label": "Contesto macro",
+            "value": "Risk-on fragile",
+            "tone": "neutral",
+            "detail": "S&P futures positivi, ma volatilita` e dispersione restano elevate."
+          },
+          {
+            "label": "Biotech sentiment",
+            "value": "Misto / debole",
+            "tone": "negative",
+            "detail": "XBI sotto pressione nel pre-market: serve sizing ridotto sui binari."
+          },
+          {
+            "label": "Difesa sentiment",
+            "value": "Positivo",
+            "tone": "positive",
+            "detail": "Spesa militare, drone stack e geopolitica sostengono il settore."
+          },
+          {
+            "label": "Fed / tassi",
+            "value": "Cauti",
+            "tone": "neutral",
+            "detail": "Il costo del capitale resta un tema per biotech pre-revenue e micro-cap ad alta diluizione."
+          }
+        ],
+        "screeningNarrative": "Il desk unificato ripulisce i due bot legacy: 4 nomi vengono mantenuti in tabella per tracking, ma solo 3 passano come opportunita` operative reali. LUNR resta in uscita perche` fuori range prezzo; TLRY e SOUN escono per incoerenza settoriale."
+      },
+      "screening": {
+        "universeReviewed": 52,
+        "validSetups": 3,
+        "newEntries": 1,
+        "removed": 2
+      },
+      "executiveSummary": {
+        "topOpportunities": [
+          "STTK",
+          "PRSO"
+        ],
+        "newEntries": [
+          "STTK"
+        ],
+        "removed": [
+          "TLRY",
+          "SOUN"
+        ],
+        "keyInsights": [
+          "STTK entra come miglior biotech catalyst-driven nel range 1$-10$ con setup ancora non esteso.",
+          "PRSO resta il nome difesa piu` coerente in fascia prezzo, ma solo dopo conferma di consolidazione.",
+          "ALLO resta speculativo: upside forte, ma la probabilita` bear non si riduce.",
+          "LUNR viene mantenuto solo in uscita per tracking storico: il processo ora rispetta davvero il filtro 1$-10$."
+        ]
+      },
+      "watchlist": [
+        {
+          "symbol": "STTK",
+          "company": "Shattuck Labs",
+          "sector": "Biotech",
+          "subSector": "IBD / immunology",
+          "status": "Nuovo",
+          "priceReference": "~$5.88-$6.15",
+          "catalyst": "Phase 1 SL-325 data e preparazione Phase 2 Crohn",
+          "catalystWindow": "30-60 giorni",
+          "estimatedUpside": "+19% a +61%, bull fino a +154%",
+          "primaryRisk": "Rischio binario sui dati",
+          "thesis": "STTK offre il miglior mix del desk: price range coerente, catalyst chiaro, runway lunga e potenziale rerating se il profilo safety/PK regge. La posizione non va trattata come breakout gia` esteso, ma come accumulo disciplinato pre-data.",
+          "updateVsPrevious": "Nuovo ingresso rispetto alla baseline W13. Sostituisce nomi legacy fuori focus e diventa subito la top conviction biotech.",
+          "valuationGap": {
+            "current": "~$5.90",
+            "target": "$7-9.50 base, outlier $15",
+            "upside": "+19% a +61% nel base, bull fino a +154%"
+          },
+          "marketStructure": {
+            "trend": "Trend rialzista iniziale, non ancora parabolico",
+            "keyLevels": "$5.50-$6.00 entry / $4.50 invalidazione / $8.50 first take-profit",
+            "cycle": "Pre-catalyst accumulation"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Alto",
+            "politicalRisk": "Basso",
+            "dilutionRisk": "Medio",
+            "downside": "$3-4 realistico se la safety delude o il data slitta",
+            "notes": [
+              "ATM e shelf esistono, ma la runway non segnala emergenza di capitale.",
+              "Il sizing va ridotto se XBI continua a deteriorare."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$10-15",
+              "probability": "35%",
+              "narrative": "Data pulito, rerating e possibile M&A premium."
+            },
+            {
+              "name": "Base",
+              "price": "$7-9",
+              "probability": "40%",
+              "narrative": "Ph1 accettabile e prosecuzione verso Phase 2."
+            },
+            {
+              "name": "Bear",
+              "price": "$3-4",
+              "probability": "25%",
+              "narrative": "Safety signal, ritardo o sell-off di settore."
+            }
+          ],
+          "setup": {
+            "entry": "$5.50-$6.00",
+            "stop": "$4.50",
+            "target": "$8.50 / $10-15",
+            "strategy": "Accumulo graduale"
+          },
+          "history": [
+            {
+              "weekId": "2026-W14",
+              "price": "~$5.88-$6.15",
+              "status": "Nuovo",
+              "scenario": "Top conviction biotech"
+            }
+          ],
+          "recurringPattern": "Pre-catalyst run nelle 4-6 settimane prima dei dati, con sell-the-news potenziale il giorno dell'evento.",
+          "sourceNotes": [
+            "Catalyst watch da sell-side e cash runway lunga riducono il rischio di forced financing immediato.",
+            "Il meccanismo first-in-class e` il cuore del valuation gap."
+          ],
+          "sourceFocus": {
+            "company": "Shattuck Labs",
+            "keywords": [
+              "STTK",
+              "Shattuck Labs",
+              "SL-325",
+              "Crohn"
+            ],
+            "sector": "biotech"
+          }
+        },
+        {
+          "symbol": "ALLO",
+          "company": "Allogene Therapeutics",
+          "sector": "Biotech",
+          "subSector": "Cell therapy",
+          "status": "Confermato",
+          "priceReference": "~$2.80",
+          "catalyst": "Short squeeze setup e flusso conference / sentiment biotech",
+          "catalystWindow": "15-45 giorni",
+          "estimatedUpside": "+14% base / +96% bull",
+          "primaryRisk": "Offering risk",
+          "thesis": "ALLO resta nella lista perche` il rapporto upside/volatilita` e` estremo, ma il desk la riclassifica in modo piu` severo: non e` una top idea, e` un satellite speculativo legato a squeeze e read-through.",
+          "updateVsPrevious": "Confermata, ma con probabilita` piu` bilanciata verso downside: la probabilita` bear resta al 40% e il desk non alza il conviction score.",
+          "valuationGap": {
+            "current": "~$2.80",
+            "target": "$3.20 base / $5.50 bull",
+            "upside": "+14% a +96%"
+          },
+          "marketStructure": {
+            "trend": "Compresso, ancora fragile",
+            "keyLevels": "$2.70-$2.90 trigger / $2.30 invalidazione / $3.50 first scale-out",
+            "cycle": "Compressione pre-evento con squeeze risk"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Molto alto",
+            "politicalRisk": "Basso",
+            "dilutionRisk": "Alto",
+            "downside": "$1.80 realistico se arriva offering o il sentiment biotech si rompe",
+            "notes": [
+              "Solo sizing micro.",
+              "Il titolo va guardato piu` con il filing radar che con il chart tradizionale."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$5.50",
+              "probability": "20%",
+              "narrative": "Squeeze e M&A rumor."
+            },
+            {
+              "name": "Base",
+              "price": "$3.20",
+              "probability": "40%",
+              "narrative": "Stabilizzazione senza evento materiale."
+            },
+            {
+              "name": "Bear",
+              "price": "$1.80",
+              "probability": "40%",
+              "narrative": "Offering o assenza di follow-through."
+            }
+          ],
+          "setup": {
+            "entry": "$2.70-$2.90 solo su volume",
+            "stop": "$2.30",
+            "target": "$3.50 / $5.50",
+            "strategy": "Accumulo tattico minimo"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "~$2.80",
+              "status": "Confermato",
+              "scenario": "Setup squeeze"
+            },
+            {
+              "weekId": "2026-W14",
+              "price": "~$2.80",
+              "status": "Confermato",
+              "scenario": "Speculativo ma confermato"
+            }
+          ],
+          "recurringPattern": "Short squeeze pre-evento seguito spesso da offering o flush intraday.",
+          "sourceNotes": [
+            "Il profilo resta speculativo anche se il ticker passa ancora i filtri di prezzo."
+          ],
+          "sourceFocus": {
+            "company": "Allogene Therapeutics",
+            "keywords": [
+              "ALLO",
+              "Allogene",
+              "cell therapy"
+            ],
+            "sector": "biotech"
+          }
+        },
+        {
+          "symbol": "PRSO",
+          "company": "Peraso",
+          "sector": "Difesa",
+          "subSector": "Defense tech / mmWave",
+          "status": "Confermato",
+          "priceReference": "~$3.50",
+          "catalyst": "Consolidazione post-contract e potenziale secondo impulso",
+          "catalystWindow": "15-30 giorni",
+          "estimatedUpside": "+20% base / +86% bull",
+          "primaryRisk": "Hype fade post-spike",
+          "thesis": "PRSO resta il miglior nome difesa small-cap nel range. Non ha la qualita` di backlog di un mid-cap, ma il catalyst e` reale e il titolo ha ancora una narrativa coerente con la spesa difesa. Il problema non e` l'idea, e` il timing.",
+          "updateVsPrevious": "Confermato. Nessun upgrade di probabilita` finche` la base tecnica non si completa; il desk passa da entusiasmo di primo spike a disciplina di attesa.",
+          "valuationGap": {
+            "current": "~$3.50",
+            "target": "$4.20 base / $6.50 bull",
+            "upside": "+20% a +86%"
+          },
+          "marketStructure": {
+            "trend": "Post-spike consolidation",
+            "keyLevels": "$2.90 invalidazione / $4.50 breakout / $6.50 extension",
+            "cycle": "Contract hype cycle"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Medio",
+            "politicalRisk": "Medio",
+            "dilutionRisk": "Basso",
+            "downside": "$2.20 se il market reclassifica il move come one-off",
+            "notes": [
+              "Non va inseguito.",
+              "Il volume in calo durante la base e` un requisito, non un dettaglio."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$6.50",
+              "probability": "20%",
+              "narrative": "Nuovi contratti o sell-side recognition."
+            },
+            {
+              "name": "Base",
+              "price": "$4.20",
+              "probability": "40%",
+              "narrative": "Base ordinata e secondo impulso."
+            },
+            {
+              "name": "Bear",
+              "price": "$2.20",
+              "probability": "40%",
+              "narrative": "Fade del catalyst senza conferme."
+            }
+          ],
+          "setup": {
+            "entry": "Solo dopo 5+ sedute di base",
+            "stop": "$2.90",
+            "target": "$4.50 / $6.50",
+            "strategy": "Attesa con trigger"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "~$3.50",
+              "status": "Nuovo",
+              "scenario": "Post-spike consolidation"
+            },
+            {
+              "weekId": "2026-W14",
+              "price": "~$3.50",
+              "status": "Confermato",
+              "scenario": "Conferma solo se la base regge"
+            }
+          ],
+          "recurringPattern": "Contract hype cycle: spike iniziale, stallo, ripartenza solo se le notizie tornano a supportare la narrativa.",
+          "sourceNotes": [
+            "Il nome difesa piu` processabile del desk, ma solo se il mercato concede un secondo timing di ingresso."
+          ],
+          "sourceFocus": {
+            "company": "Peraso",
+            "keywords": [
+              "PRSO",
+              "Peraso",
+              "mmWave defense"
+            ],
+            "sector": "defense"
+          }
+        },
+        {
+          "symbol": "LUNR",
+          "company": "Intuitive Machines",
+          "sector": "Difesa",
+          "subSector": "Spazio / NASA / DoD",
+          "status": "In uscita",
+          "priceReference": "~$17.92",
+          "catalyst": "IM-5 award e decisione LTV",
+          "catalystWindow": "30-60 giorni",
+          "estimatedUpside": "+35% base / +95% bull",
+          "primaryRisk": "Prezzo fuori mandato",
+          "thesis": "LUNR resta utile solo come benchmark di sentiment difesa/spazio. Il desk lo tiene una settimana in uscita per tracciare la migrazione del processo, poi va fuori dal capitale allocabile.",
+          "updateVsPrevious": "Downgrade netto: da benchmark osservato a posizione in uscita, esclusa dal set operativo perche` non rientra nel range $1-$10.",
+          "valuationGap": {
+            "current": "~$17.92",
+            "target": "$20-24 base / $28-35 bull",
+            "upside": "+12% a +95%"
+          },
+          "marketStructure": {
+            "trend": "Positivo ma esteso",
+            "keyLevels": "$16.50 pullback / $14 invalidazione",
+            "cycle": "Contract repricing"
+          },
+          "riskAnalysis": {
+            "binaryRisk": "Medio",
+            "politicalRisk": "Medio",
+            "dilutionRisk": "Medio",
+            "downside": "$10-14 in caso di perdita catalyst",
+            "notes": [
+              "Non e` un errore di analisi, e` un errore di processo se resta in portafoglio small-cap."
+            ]
+          },
+          "scenarios": [
+            {
+              "name": "Bull",
+              "price": "$28-35",
+              "probability": "30%",
+              "narrative": "Award e execution."
+            },
+            {
+              "name": "Base",
+              "price": "$20-24",
+              "probability": "40%",
+              "narrative": "Backlog eseguito bene."
+            },
+            {
+              "name": "Bear",
+              "price": "$10-14",
+              "probability": "30%",
+              "narrative": "LTV perso o compressione multipli."
+            }
+          ],
+          "setup": {
+            "entry": "Nessuna nuova entry",
+            "stop": "N/A per il desk",
+            "target": "Tracking only",
+            "strategy": "Uscita / benchmark"
+          },
+          "history": [
+            {
+              "weekId": "2026-W13",
+              "price": "~$17.92",
+              "status": "Nuovo",
+              "scenario": "Benchmark tematico"
+            },
+            {
+              "weekId": "2026-W14",
+              "price": "~$17.92",
+              "status": "In uscita",
+              "scenario": "Escluso per range prezzo"
+            }
+          ],
+          "recurringPattern": "Repricing post-award con alto rischio di sell-the-news su nomi gia` estesi.",
+          "sourceNotes": [
+            "Resta utile per leggere il sentiment difesa, non per costruire capitale nuovo nel perimetro small-cap."
+          ],
+          "sourceFocus": {
+            "company": "Intuitive Machines",
+            "keywords": [
+              "LUNR",
+              "Intuitive Machines",
+              "NASA"
+            ],
+            "sector": "defense"
+          }
+        }
+      ],
+      "removed": [
+        {
+          "symbol": "TLRY",
+          "reason": "Titolo fuori mandato settoriale: cannabis, non difesa/biotech.",
+          "previousBucket": "Legacy momentum candidate"
+        },
+        {
+          "symbol": "SOUN",
+          "reason": "Titolo fuori mandato settoriale e senza catalyst binario coerente col desk.",
+          "previousBucket": "Legacy reversal candidate"
+        }
+      ],
+      "riskRanking": {
+        "mostDefensive": {
+          "symbol": "PRSO",
+          "label": "Piu` difensivo",
+          "reason": "Catalyst reale legato a contratti difesa, rischio meno binario di un biotech puro."
+        },
+        "mostSpeculative": {
+          "symbol": "ALLO",
+          "label": "Piu` speculativo",
+          "reason": "Il peso di dilution + binary risk resta il piu` alto del paniere."
+        },
+        "bestRiskReward": {
+          "symbol": "STTK",
+          "label": "Miglior rischio/rendimento",
+          "reason": "Catalyst definito, cash runway lunga e struttura prezzo ancora accumulabile."
+        }
+      },
+      "portfolioImplication": [
+        {
+          "bucket": "Allocare",
+          "symbol": "STTK",
+          "title": "Top conviction della settimana",
+          "body": "Accumulo graduale tra $5.50 e $6.00, size iniziale ridotta per il contesto biotech. E` il nome che merita capitale nuovo."
+        },
+        {
+          "bucket": "Mantenere / attendere",
+          "symbol": "PRSO",
+          "title": "Tenere in radar con trigger tecnico",
+          "body": "Non entrare sul primo spike. Il capitale si muove solo se la base viene completata con volumi in contrazione."
+        },
+        {
+          "bucket": "Mantenere minimo",
+          "symbol": "ALLO",
+          "title": "Satellite speculativo",
+          "body": "Solo posizione micro e solo se si accetta il rischio di offering o flush binario."
+        },
+        {
+          "bucket": "Ridurre / escludere",
+          "symbol": "LUNR / TLRY / SOUN",
+          "title": "Disciplina di processo",
+          "body": "LUNR esce per range prezzo, TLRY e SOUN escono per settore. Il desk non usa capitale per idee fuori mandato."
+        }
+      ],
+      "methodology": {
+        "pillars": [
+          {
+            "title": "Filter first",
+            "body": "Prezzo, liquidita`, coerenza aziendale e catalyst sono filtri non negoziabili."
+          },
+          {
+            "title": "Risk-first",
+            "body": "Ogni idea ha downside realistico, rischio di diluizione e strategia di sizing prima del target."
+          },
+          {
+            "title": "Tracking storico",
+            "body": "Ogni nome viene aggiornato con prezzo, scenario e cambiamento di probabilita` rispetto alla settimana precedente."
+          }
+        ]
+      }
+    }
+  ]
+}
